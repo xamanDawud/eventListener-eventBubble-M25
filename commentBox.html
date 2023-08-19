@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+</head>
+
+<body>
+    <h1 id="comment-text">Special Text</h1>
+    <textarea id="text-area" name="" id="" cols="30" rows="10"></textarea> <br><br>
+    <button id="btn-comment">Comment</button>
+    <!-- <script src="js/index.js"></script> -->
+    <script>
+        document.getElementById("btn-comment").addEventListener("click", function (event) {
+            let commentText = document.getElementById('comment-text')
+            let inputText = document.getElementById('text-area')
+            commentText.innerText = inputText.value
+        });
+    </script>
+</body>
+
+</html>
